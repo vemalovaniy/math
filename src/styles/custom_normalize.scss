@@ -1,0 +1,70 @@
+@import "~normalize.css/normalize.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*,
+*:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.cdk-overlay-container {
+  z-index: 2000;
+}
+
+// Hide '(current)' text for Bootstrap(V5) pagaination
+.sr-only {
+  display: none;
+}
+
+.js-focus-visible {
+  :focus {
+    &:not(.focus-visible) {
+      outline: none;
+    }
+  }
+}

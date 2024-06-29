@@ -1,0 +1,42 @@
+<div class="wrap">
+  <div class="block">
+    <math-matrix-ui [matrix]="matrix1" title="Init Value"></math-matrix-ui>
+  </div>
+  <div class="block">
+    <math-matrix-ui [matrix]="matrix1Result" title="Result"></math-matrix-ui>
+  </div>
+  <div class="block">
+    <math-matrix-ui [matrix]="matrix1expected" title="Expected"></math-matrix-ui>
+  </div>
+</div>
+
+<div class="h3">Addition</div>
+<div class="wrap">
+  <div class="block">
+    <math-matrix-ui [matrix]="matrix2" title="1st Value"></math-matrix-ui>
+  </div>
+  <div class="block">
+    <math-matrix-ui [matrix]="matrix21" title="2nd Value"></math-matrix-ui>
+  </div>
+  <div class="block">
+    <math-matrix-ui [matrix]="matrix2Result" title="Result"></math-matrix-ui>
+  </div>
+  <div class="block">
+    <math-matrix-ui [matrix]="matrix2expected" title="Expected"></math-matrix-ui>
+  </div>
+</div>
+
+<div class="h3">Multiply by number</div>
+<div class="wrap">
+  <math-matrix-ui class="block" [matrix]="multiplyByNumberData.init" title="Init Value"></math-matrix-ui>
+  <math-matrix-ui class="block" [matrix]="multiplyByNumberData.result" title="Result"></math-matrix-ui>
+  <math-matrix-ui class="block" [matrix]="multiplyByNumberData.expected" title="Expected"></math-matrix-ui>
+</div>
+
+<div class="h3">Multiply by Matrixr</div>
+<div class="wrap">
+  <math-matrix-ui class="block" [matrix]="multiplyByMatrixData.init" title="1st Value"></math-matrix-ui>
+  <math-matrix-ui class="block" [matrix]="multiplyByMatrixData.init2" title="2nd Value"></math-matrix-ui>
+  <math-matrix-ui class="block" [matrix]="multiplyByMatrixData.result" title="Result"></math-matrix-ui>
+  <math-matrix-ui class="block" [matrix]="multiplyByMatrixData.expected" title="Expected"></math-matrix-ui>
+</div>

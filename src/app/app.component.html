@@ -1,0 +1,9 @@
+<nav>
+  <ul>
+    <a *ngFor="let item of routes" mat-button [routerLink]="item.path">{{item.title}}</a>
+  </ul>
+</nav>
+
+<div class="page">
+  <router-outlet></router-outlet>
+</div>
